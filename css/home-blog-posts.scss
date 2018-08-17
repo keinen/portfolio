@@ -1,0 +1,44 @@
+.blog-posts{
+  display: flex;
+  margin-top: 8%;
+
+}
+
+.post-container {
+  color: white;
+  padding: 50px 20px;
+  background-color: #FFA617;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  width: 27%;
+}
+  .post-container:hover {
+    background-color: orangered;
+    cursor: pointer;
+
+  }
+
+
+.post-title{
+  display: flex;
+
+  h3{
+
+  }
+}
+
+
+.post-blurb {
+  display: flex;
+  p {
+
+  }
+}
+
+.post-link {
+  display: flex;
+  a{
+  color: white;
+  }
+}

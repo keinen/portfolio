@@ -1,0 +1,28 @@
+
+nav{
+  display:flex;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.nav-icons {
+  display: flex;
+  width: 15%;
+  justify-content: space-around;
+  margin:15px 0px 0px 40px;
+}
+
+.navbar-menu {
+  display: flex;
+  width: 90%;
+
+  .nav-ul {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    .nav-li {
+      list-style-type: none;
+      margin:25px;
+    }
+  }
+}
