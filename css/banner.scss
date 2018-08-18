@@ -1,82 +1,165 @@
+/* vvv smaller than tablet vvv */
+@media only screen and (min-width: 768px) {
 
-.banner-flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:flex-end;
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 25px;
-  box-sizing: border-box;
-}
+  .banner-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
 
-.banner-gradient-block {
-  display: flex;
-  flex-flow: wrap column;
-  justify-content: flex-end;
-  height:900px;
-  width:80%;
-  background: rgb(249, 91, 0); /* Old browsers */
-  background: -moz-linear-gradient(left, rgba(255, 166, 23, 1) 0%, rgba(255, 231, 15, 1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(255, 166, 23, 1) 0%, rgba(255, 231, 15, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(255, 166, 23, 1) 0%, rgba(255, 231, 15, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f95b00', endColorstr='#ffe70f', GradientType=1); /* IE6-9 */
-}
+  .banner-gradient-block {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-end;
+    height: 900px;
+    width: 80%;
+    background: rgb(249, 91, 0); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255, 166, 23, 1) 0%, rgba(255, 231, 15, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 166, 23, 1) 0%, rgba(255, 231, 15, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 166, 23, 1) 0%, rgba(255, 231, 15, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f95b00', endColorstr='#ffe70f', GradientType=1); /* IE6-9 */
+  }
 
-.banner-h1 h1{
-  font-size: 10em;
-  display: flex;
-  align-items: center;
-  margin-left: -188px;
+  .banner-h1 h1 {
+    font-size: 10em;
+    display: flex;
+    align-items: center;
+    margin-left: -188px;
 
-  span{
+    span {
+      color: white;
+    }
+  }
+
+  .banner-h2 h2 {
     color: white;
+    font-size: 2em;
+    font-weight: 400;
+    margin: -55px 0px 110px 0px;
+  }
+
+  .about-content {
+    flex-direction: row;
+    flex-flow: row;
+    display: flex;
+
+  }
+
+  .about-heading {
+    padding: 65px 0px 45px 0px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-end;
+    background-color: white;
+    width: 40%;
+
+    h1 {
+      line-height: 0.9;
+      text-align: right;
+      margin-right: 25px;
+    }
+  }
+
+  .about-blurb {
+    padding: 65px 0px 75px 25px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 45%;
+
+    p {
+      color: white;
+      order: 4;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+  }
+
+}
+/* vvv smaller than tablet vvv */
+@media only screen and (max-width: 769px) {
+
+  .banner-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+
+  .banner-gradient-block {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    padding: 50px 10px;
+    background: rgb(249, 91, 0); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255, 166, 23, 1) 0%, rgba(255, 231, 15, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 166, 23, 1) 0%, rgba(255, 231, 15, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 166, 23, 1) 0%, rgba(255, 231, 15, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f95b00', endColorstr='#ffe70f', GradientType=1); /* IE6-9 */
+  }
+
+  .banner-h1 h1 {
+    color: white;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+
+    span {
+      color: white;
+    }
+  }
+
+  .banner-h2 h2 {
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    margin: -55px 0px 110px 0px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    display: flex;
+
+  }
+
+  .about-heading {
+    padding: 0px 0px 45px 0px;
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+
+    h1 {
+      font-size: 5em;
+      line-height: 0.9;
+      text-align: left;
+      margin-right: 25px;
+    }
+  }
+
+  .about-blurb {
+    padding: 30px 0px 45px 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+
+    p {
+      color: $font-color;
+      order: 4;
+      text-align: left;
+      margin-bottom: 25px;
+    }
   }
 }
-
-.banner-h2 h2{
-  color: white;
-  font-size: 2em;
-  font-weight: 400;
-  margin: -55px 0px 110px 0px;
-}
-
-.about-content{
-  flex-direction: row;
-  flex-flow: row;
-  display: flex;
-
-}
-
-.about-heading{
-  padding: 65px 0px 45px 0px;
-  display:flex;
-  align-self:flex-start;
-  justify-content: flex-end;
-  background-color: white;
-  width:40%;
-
-  h1{
-    line-height: 0.9;
-    text-align: right;
-    margin-right: 25px;
-  }
-}
-
-.about-blurb{
-  padding: 65px 0px 75px 25px;
-  display:flex;
-  flex-direction: column;
-  align-self:flex-end;
-  width:45%;
-
-   p{
-     color: white;
-     order:4;
-     text-align: left;
-     margin-bottom: 25px;
-  }
-}
-
-
