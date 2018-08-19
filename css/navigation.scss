@@ -1,4 +1,11 @@
-/* vvv smaller than tablet vvv */
+
+
+
+// vvv Screen sizes vvv 
+// vvv smaller than tablet vvv ------------------------------------
+
+
+
 @media only screen and (max-width: 768px) {
 
 
@@ -157,7 +164,6 @@
     display: none;
   }
 
-
   nav {
     display:flex;
     flex-direction: column;
@@ -188,10 +194,15 @@
         margin: 25px;
       }
     }
-
 }
 
-/* vvv larger than tablet vvv */
+
+
+
+// vvv Screen sizes vvv
+// vvv larger than tablet vvv ------------------------------------
+
+
 @media only screen and (min-width: 769px) {
 
 

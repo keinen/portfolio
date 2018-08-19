@@ -635,7 +635,6 @@ td,
 th {
   padding: 0; }
 
-/* vvv smaller than tablet vvv */
 @media only screen and (max-width: 768px) {
   .hamburger-placement {
     display: flex;
@@ -739,7 +738,6 @@ th {
       text-align: center;
       list-style-type: none;
       margin: 25px; } }
-/* vvv larger than tablet vvv */
 @media only screen and (min-width: 769px) {
   nav {
     display: flex;
