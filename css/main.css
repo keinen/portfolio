@@ -747,28 +747,37 @@ th {
 @media only screen and (min-width: 769px) {
   nav {
     display: flex;
+    flex-direction: row;
     max-width: 1200px;
     margin: 0 auto; }
 
   .hamburger {
+    order: 5;
     display: none; }
 
   .nav-icons {
     display: flex;
-    width: 15%;
     justify-content: space-around;
-    margin: 15px 0px 0px 40px; }
+    margin: 15px 15px 0px 40px; }
+    .nav-icons a {
+      margin: 0px 15px 0px 0px; }
 
   .navbar-menu {
+    display: flex; }
+
+  .hide-nav {
     display: flex;
-    width: 90%; }
-    .navbar-menu .nav-ul {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end; }
-      .navbar-menu .nav-ul .nav-li {
-        list-style-type: none;
-        margin: 25px; } }
+    width: 100%;
+    justify-content: space-between; }
+    .hide-nav .full-nav {
+      display: flex; }
+
+  .nav-ul {
+    width: 100%;
+    display: flex; }
+    .nav-ul .nav-li {
+      list-style-type: none;
+      margin: 25px; } }
 /* vvv smaller than tablet vvv */
 @media only screen and (min-width: 768px) {
   .banner-flex-container {
