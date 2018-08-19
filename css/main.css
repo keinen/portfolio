@@ -654,7 +654,8 @@ th {
     background-color: transparent;
     border: 0;
     margin: 0;
-    overflow: visible; }
+    overflow: visible;
+    outline-color: white; }
     .hamburger:hover {
       opacity: 0.7; }
 
@@ -663,6 +664,9 @@ th {
     height: 24px;
     display: inline-block;
     position: relative; }
+    .hamburger-box .hamburger-box:focus {
+      background-color: white;
+      border: none; }
 
   .hamburger-inner {
     display: block;
@@ -723,26 +727,18 @@ th {
 
   .nav-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%; }
     .nav-icons a {
       padding: 10px; }
 
-  .navbar-menu {
+  .nav-ul {
     display: flex;
-    flex-direction: column;
-    width: 100%; }
-    .navbar-menu .nav-ul {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: flex-end; }
-      .navbar-menu .nav-ul .nav-li {
-        width: 100%;
-        text-align: center;
-        list-style-type: none;
-        margin: 25px; } }
+    flex-direction: column; }
+    .nav-ul .nav-li {
+      text-align: center;
+      list-style-type: none;
+      margin: 25px; } }
 /* vvv larger than tablet vvv */
 @media only screen and (min-width: 769px) {
   nav {

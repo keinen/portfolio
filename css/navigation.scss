@@ -24,44 +24,15 @@
   // Types (Remove or comment out what you don’t need)
   // ==================================================
   $hamburger-types: (
-          3dx,
-          3dx-r,
-          3dy,
-          3dy-r,
-          3dxy,
-          3dxy-r,
-          arrow,
-          arrow-r,
-          arrowalt,
-          arrowalt-r,
-          arrowturn,
-          arrowturn-r,
-          boring,
+
           collapse,
-          collapse-r,
-          elastic,
-          elastic-r,
-          emphatic,
-          emphatic-r,
-          minus,
-          slider,
-          slider-r,
-          spin,
-          spin-r,
-          spring,
-          spring-r,
-          stand,
-          stand-r,
-          squeeze,
-          vortex,
-          vortex-r
+          collapse-r
   ) !default;
   // Hamburger
   // ==================================================
 
   .hamburger-placement{
     display: flex;
-
     justify-content: flex-end;
   }
 
@@ -69,7 +40,6 @@
     padding: $hamburger-padding-y $hamburger-padding-x;
     display: inline-block;
     cursor: pointer;
-
     transition-property: opacity, filter;
     transition-duration: $hamburger-hover-transition-duration;
     transition-timing-function: $hamburger-hover-transition-timing-function;
@@ -82,6 +52,7 @@
     border: 0;
     margin: 0;
     overflow: visible;
+    outline-color: white;
 
     &:hover {
       @if $hamburger-hover-use-filter == true {
@@ -98,6 +69,10 @@
     height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
     display: inline-block;
     position: relative;
+    .hamburger-box:focus{
+      background-color: white;
+      border: none;
+    }
   }
 
   .hamburger-inner {
@@ -193,7 +168,7 @@
   .nav-icons {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     a {
       padding:10px;
@@ -202,24 +177,18 @@
 
   .navbar-menu {
 
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  }
 
     .nav-ul {
-      width: 100%;
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: flex-end;
       .nav-li {
-        width:100%;
         text-align: center;
         list-style-type: none;
         margin: 25px;
       }
     }
-  }
+
 }
 
 /* vvv larger than tablet vvv */
