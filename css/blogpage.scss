@@ -9,7 +9,6 @@
     justify-content:center;
     position: relative;
     width:100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 25px;
     box-sizing: border-box;
@@ -56,12 +55,12 @@
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 25px;
     box-sizing: border-box;
   }
+
 
   .blog-post-header {
     display: flex;
