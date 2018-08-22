@@ -5,6 +5,3 @@ hamburger.addEventListener("click", function () {
     hamburger.classList.toggle('is-active');
     navUl.classList.toggle('hide-nav');
 });
-
-
-

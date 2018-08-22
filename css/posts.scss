@@ -1,26 +1,27 @@
 /* vvv smaller than tablet vvv */
 @media only screen and (min-width: 768px) {
 
-  .blog-posts {
+  .blog-page-posts {
     display: flex;
     margin-top: 0%;
 
   }
 
-  .post-container{
+  .post-page-container {
     color: white;
     padding: 50px 20px;
-    margin: 75px 0px 0px 0px;
+    margin: 75px 12px 0px 13px;
     background-color: #FFA617;
     display: flex;
     flex-flow: column;
+    justify-content: flex-start;
     width: 27%;
   }
-  .post-container:hover {
+  .post-page-container:hover {
     background-color: rgb(249, 91, 0);
   }
 
-  .post-title {
+  .post-page-title {
     display: flex;
 
     h3 {
@@ -28,31 +29,45 @@
     }
   }
 
-  .post-blurb {
+  .post-page-blurb {
     display: flex;
     p {
 
     }
   }
 
-  .post-link {
+  .post-page-link {
     display: flex;
     a {
       color: white;
     }
   }
+
+  .post-page-link:hover {
+    width:50%;
+    display: flex;
+    border-bottom-style: solid;
+    border-botton-width: thin;
+    border-bottom-color: white;
+    a {
+      color: white;
+    }
+  }
+
 }
+
+
 
 
 /* vvv smaller than tablet vvv */
 @media only screen and (max-width: 769px) {
-  .blog-posts {
+  .blog-page-posts {
     display: flex;
     margin-top: 8%;
 
   }
 
-  .post-container {
+  .post-page-container {
     color: white;
     padding: 50px 20px;
     margin-top:50px;
@@ -62,11 +77,12 @@
     justify-content: space-evenly;
     width: 90%;
   }
-  .post-container:hover {
+  .post-page-container:hover {
     background-color: rgb(249, 91, 0);
+
   }
 
-  .post-title {
+  .post-page-title {
     display: flex;
 
     h3 {
@@ -74,14 +90,14 @@
     }
   }
 
-  .post-blurb {
+  .post-page-blurb {
     display: flex;
     p {
 
     }
   }
 
-  .post-link {
+  .post-page-link {
     display: flex;
     a {
       color: white;
