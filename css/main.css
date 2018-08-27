@@ -784,7 +784,7 @@ th {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0 auto; }
+    margin: 10px 0px 20px 0px; }
 
   .nav-icons {
     display: flex;
