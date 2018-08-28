@@ -8,9 +8,4 @@ hamburger.addEventListener("click", function () {
     navUl.classList.toggle('hide-nav');
 });
 
-postButton.addEventListener("mouseover", function() {
-    console.log('mouseover');
-
-});
-
 
